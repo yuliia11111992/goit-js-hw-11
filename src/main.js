@@ -58,7 +58,7 @@ fetchPicturesForm.addEventListener('submit', event => {
 for (let i = 0; i < data.hits.length; i++) {
   const imageData = data.hits[i]; // отримати дані про окреме зображення
   markup += `<li class="gallery-item">
-    <a href="${imageData.webformatURL}">
+    <a href="${imageData.largeImageURL}">
       <img class="gallery-image" src="${imageData.webformatURL}" alt="${imageData.tags}">
     </a>
     <p><b>Likes: </b>${imageData.likes}</p>
